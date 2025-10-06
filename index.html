@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>{% block title %}Cambio Climático{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>Cambio Climático</h1>
+        <nav>
+            <ul>   
+                <li><a href="{{ url_for('index') }}">Inicio</a></li>
+                <li><a href="{{ url_for('somos') }}">Quiénes Somos</a></li>
+                <li><a href="{{ url_for('contenido') }}">Contenido</a></li>
+                <li><a href="{{ url_for('contacto') }}">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block image %}{% endblock %}
+        {% block content %}
+        <!-- Contenido por defecto SOLO para index -->
+        <section>
+            <h2>Bienvenido</h2>
+            <p>Este sitio busca informar y concientizar sobre el cambio climático y sus efectos.</p>
+            <img src="{{ url_for('static', filename='imagenes/images (1).jpeg') }}" alt="Imagen sobre cambio climático">
+        </section>
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy;         2025 Cambio Climático | Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

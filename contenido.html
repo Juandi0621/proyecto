@@ -1,0 +1,59 @@
+{% extends "index.html" %}
+
+{% block title %}Contenido - Cambio Climático{% endblock %}
+
+
+{% block content %}
+<section>
+    <img src="{{ url_for('static', filename='imagenes/10-Blog_Dia-Internacional_contra_Cambio_Climatico-01.jpg') }}" alt="Imagen sobre cambio climático">
+    <h2>Contenido</h2>
+    <p>
+        Aquí encontrarás artículos, noticias y material educativo sobre el cambio climático.
+        El objetivo es crear conciencia y brindar información confiable para comprender mejor
+        este fenómeno global.
+    </p>
+</section>
+
+<section>
+    <h3>🌍 ¿Qué es el cambio climático?</h3>
+    <p>
+        El cambio climático se refiere a variaciones a largo plazo en el clima de la Tierra,
+        principalmente ocasionadas por la actividad humana: la quema de combustibles fósiles,
+        la deforestación y el aumento de gases de efecto invernadero.
+    </p>
+</section>
+
+<section>
+    <h3>🔥 Consecuencias principales</h3>
+    <ul>
+        <li>Aumento de la temperatura global</li>
+        <li>Deshielo de glaciares y aumento del nivel del mar</li>
+        <li>Fenómenos climáticos extremos: huracanes, sequías, olas de calor</li>
+        <li>Pérdida de biodiversidad y extinción de especies</li>
+        <li>Impactos en la agricultura y la seguridad alimentaria</li>
+    </ul>
+</section>
+
+<section>
+    <h3>💡 ¿Qué podemos hacer?</h3>
+    <ol>
+        <li>Usar transporte sostenible (bicicleta, transporte público, vehículos eléctricos).</li>
+        <li>Ahorrar energía en el hogar (apagar luces, usar bombillos LED, paneles solares).</li>
+        <li>Reducir, reutilizar y reciclar productos.</li>
+        <li>Consumir alimentos locales y reducir el consumo de carne.</li>
+        <li>Plantar árboles y apoyar proyectos de reforestación.</li>
+    </ol>
+</section>
+
+<section>
+    <h3>📚 Recursos educativos</h3>
+    <p>
+        Explora estos recursos para profundizar en el tema:
+    </p>
+    <ul>
+        <li><a href="https://www.ipcc.ch/languages-2/spanish/" target="_blank">Informes del IPCC (ONU)</a></li>
+        <li><a href="https://www.un.org/es/climatechange" target="_blank">Naciones Unidas - Cambio Climático</a></li>
+        <li><a href="https://climate.nasa.gov/" target="_blank">NASA - Climate Change</a></li>
+    </ul>
+</section>
+{% endblock %}
